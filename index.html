@@ -3,48 +3,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UrbanStyle - Ropa y Sneakers</title>
+    <title>UrbanStyle - Ropa, Sneakers & Streetwear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    
     <style>
+        /* --- ESTILOS URBANOS Y LLAMATIVOS (DRIP & STREETWEAR) --- */
+        :root {
+            --negro-obscuro: #0a0a0c;
+            --gris-contenedor: #141419;
+            --cherry-red: #b91c1c; /* El rojo cereza de tus imágenes de referencia */
+            --blanco: #ffffff;
+            --gris-texto: #9ca3af;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
+            padding: 10px;
+            background-color: var(--negro-obscuro);
+            color: var(--blanco);
         }
         
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 1100px;
+            margin: 20px auto;
+            background: var(--gris-contenedor);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
         
+        /* HEADER Y MENÚ */
+        header {
+            text-align: center;
+            border-bottom: 3px solid var(--cherry-red);
+            padding-bottom: 25px;
+            margin-bottom: 40px;
+        }
+
         h1 {
-            color: #1a1a2e;
-            margin-bottom: 10px;
+            font-size: 3rem;
+            font-weight: 900;
+            letter-spacing: -2px;
+            text-transform: uppercase;
+            margin: 0 0 15px 0;
+            color: var(--blanco);
+        }
+
+        h1 span {
+            color: var(--cherry-red);
         }
         
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--blanco);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--cherry-red);
+        }
+
+        /* SECCIONES */
         h2 {
-            color: #555;
-            font-size: 1.2rem;
+            font-size: 2rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: var(--blanco);
+            margin-top: 40px;
             margin-bottom: 20px;
+            border-left: 5px solid var(--cherry-red);
+            padding-left: 15px;
         }
-        
-        h3 {
-            color: #0f3460;
+
+        p {
+            color: var(--gris-texto);
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        /* GRILLA DE IMÁGENES / CONCEPTOS inspirados en tus fotos */
+        .grid-estilos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .card-estilo {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .card-estilo img {
+            width: 100%;
+            height: 480px; /* Un poco más alta para apreciar mejor los outfits enteros */
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-estilo-info {
+            padding: 20px;
+        }
+
+        .card-estilo-info h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+        }
+
+        /* LISTA DE MARCAS (ZAPATOS) */
+        .marcas-lista {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
             margin-top: 20px;
-            padding-top: 20px;
-            border-top: 2px solid #ddd;
+        }
+
+        .marcas-lista li {
+            background: var(--negro-obscuro);
+            padding: 20px;
+            border-radius: 10px;
+            border-bottom: 3px solid var(--cherry-red);
+            font-weight: 700;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        /* CONTACTO Y VIDEO */
+        .contacto-info {
+            background: rgba(255,255,255,0.02);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        .contacto-info a {
+            color: var(--cherry-red);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporción 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-top: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* ASIDE SIDEBAR (PUBLICIDAD/HORARIOS) */
+        aside {
+            background: linear-gradient(135deg, #1e1b4b, #450a0a);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 40px 0;
+            border: 1px solid var(--cherry-red);
+        }
+
+        aside h3 {
+            margin-top: 0;
+            text-transform: uppercase;
+            font-weight: 900;
+            color: var(--blanco);
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: var(--gris-texto);
+        }
+
+        /* Adaptabilidad para teléfonos */
+        @media (max-width: 768px) {
+            .grid-estilos {
+                grid-template-columns: 1fr;
+            }
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
         }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <h1>UrbanStyle - Ropa y Sneakers</h1>
-        <h2>Plataforma de ventas de ropa urbana, zapatillas exclusivas y accesorios de moda</h2>
-        <h3>Desarrollado por Karen Infante</h3>
+
+        <header>
+            <h1>Urban<span>Style</span></h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                    <li><a href="#productos">Productos & Sneakers</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section id="inicio">
+                <h2>Inicio</h2>
+                <p>Bienvenido a la zona del auténtico Streetwear. En <strong>UrbanStyle</strong> no seguimos tendencias de masas, traemos la cultura pesada de la calle directa a tu clóset. Si buscas siluetas baggy extremas, combinaciones de impacto y el calzado más exclusivo del mercado, estás en el lugar correcto. Rompe las reglas del juego con ropa y pisadas diseñadas para los que no temen destacar.</p>
+            </section>
+
+            <section id="quienes-somos">
+                <h2>Quiénes Somos</h2>
+                <p>UrbanStyle nació en el asfalto como un proyecto de respuesta directa a la creciente cultura urbana underground que exige autenticidad sobre lo genérico. Somos un sistema web y espacio de moda enfocado en la curaduría extrema de estilos icónicos como el "Baggy Street Drip" americano y la elegancia ruda del "Cherry Red Luxe". Nos dedicamos a conseguir piezas de volumen exagerado, jeans con lavados desgastados de corte oversize y tops de cuero o corsés ajustados que crean el contraste visual perfecto para el día a día en la ciudad. Nuestro objetivo principal es estructurar una comunidad global unida por el drip, donde la combinación de prendas de alta calidad y calzado legendario permita a cada persona crear una armadura de identidad urbana inigualable y con actitud incorregible.</p>
+                
+                <div class="grid-estilos">
+                    <div class="card-estilo">
+                        <img src="https://i.pinimg.com/736x/da/8c/9c/da8c9c3c48e56cb5b4fd691090dfb994.jpg" alt="Estilo urbano baggy oversize streetwear">
+                        <div class="card-estilo-info">
+                            <h3>ESTILO URBANO PREMIUM</h3>
+                            <p>Redefiniendo el streetwear contemporáneo. Siluetas masivas y texturas clásicas se encuentran en una curaduría de prendas diseñadas para el movimiento y el estilo diario.</p>
+                        </div>
+                    </div>
+                    <div class="card-estilo">
+                        <img src="https://i.pinimg.com/736x/c0/aa/fd/c0aafd4a7c958824a881c8554f7ef2ae.jpg" alt="Moda urbana cuero rojo cherry red luxe">
+                        <div class="card-estilo-info">
+                            <h3>ELEGANCE AND SEDUCTION</h3>
+                            <p>El poder del rojo cereza en su versión más audaz. Un contraste impecable entre el denim desgastado y la sofisticación de unos stilettos que elevan cualquier look nocturno.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="productos">
+                <section id="ropa">
+                <h2>Colección de Ropa Streetwear</h2>
+                <p>Siluetas con volumen y texturas premium inspiradas en las tendencias más fuertes de las redes:</p>
+                <ul class="marcas-lista">
+                    <li>👖 Baggy Jeans Extremos (Corte Oversize)</li>
+                    <li>🍒 Corsets & Tops de Cuero </li>
+                    <li>🏁 Camisas Drip</li>
+                    <li>👕 Camisetas y Hoddies </li>
+                </ul>
+            </section>
+
+            <section id="zapatos">
+                <h2>Calzado, Sneakers & Tacones</h2>
+                <p>Las marcas legendarias y los modelos más buscados a nivel mundial:</p>
+                <ul class="marcas-lista">
+                    <li>🥾 Botas Timberland Classics</li>
+                    <li>👟 Sneakers Air Jordan 1 Retro</li>
+                    <li>⚡ Nike Dunk & Air Force 1</li>
+                    <li>🏃 ASICS Gel-Lyte Tech Runners</li>
+                    <li>⚽ Tacos de Fútbol de Alta Gama</li>
+                    <li>👠 Tacos y Tacones de Aguja Style Luxe</li>
+                </ul>
+            </section>
+
+            <section id="accesorios">
+                <h2>Accesorios Urbanos</h2>
+                <p>Los complementos esenciales para cerrar tu outfit con actitud:</p>
+                <ul class="marcas-lista">
+                    <li>👜 Bolsos y Carteras</li>
+                    <li>🧢 Gorras y Gorros de lana</li>
+                    <li>⛓️ Cadenas y Joyería </li>
+                    <li>🧦 Calcetines Deportivos de Alta Densidad</li>
+                </ul>
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <div class="contacto-info">
+                    <p><strong>📧 Correo Electrónico:</strong> <a href="mailto:drops@urbanstyle.com">drops@urbanstyle.com</a></p>
+                    <p><strong>📞 Teléfono:</strong> +593 983653193</p>
+                    <p><strong>📍 Dirección Central:</strong> Quito - Condado</p>
+                    <p><strong>🌐 Redes Sociales:</strong> 
+                        <a href="https://instagram.com" target="_blank">Instagram</a> | 
+                        <a href="https://tiktok.com" target="_blank">TikTok</a> | 
+                        <a href="https://pinterest.com" target="_blank">Pinterest</a>
+                    </p>
+                </div>
+            </section>
+
+        </main>
+
+        <aside>
+            <h3>Drops de la semana / Promos</h3>
+            <p>🚨 <strong>PREVENTA EXCLUSIVA:</strong> 15% de descuento en la colección de calzado <em>Timberland x Jordan</em> ingresando tu código de estudiante de programación.</p>
+            <p>⏰ <strong>Horario de atención del soporte:</strong> 24/7 a través de nuestro servidor de Discord oficial.</p>
+        </aside>
+
+        <footer>
+            <p>Desarrollado por: <strong>Karen Infante</strong></p>
+            <p>Asignatura: <strong>Desarrollo Web / Interfases</strong> | Año: 2026</p>
+        </footer>
+
     </div>
+
 </body>
 </html>
