@@ -8,118 +8,178 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-urban">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand brand-title" href="#inicio">Urban<span>Style</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item"><a class="nav-link text-uppercase fw-bold mx-2" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-uppercase fw-bold mx-2" href="#quienes-somos">Quiénes Somos</a></li>
+                        <li class="nav-item"><a class="nav-link text-uppercase fw-bold mx-2" href="#productos">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link text-uppercase fw-bold mx-2" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-        <header>
-            <h1>Urban<span>Style</span></h1>
+    <main class="container my-5 py-4 px-3 px-md-5 urban-main-container">
+
+        <section id="inicio" class="mb-5 text-center text-md-start py-4">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-8">
+                    <h2 class="display-5 fw-black text-uppercase header-border">Inicio</h2>
+                    <p class="mt-3 lead text-muted-urban">Bienvenido a la zona del auténtico Streetwear. En <strong>UrbanStyle</strong> no seguimos tendencias de masas, traemos la cultura pesada de la calle directa a tu clóset. Si buscas siluetas baggy extremas, combinaciones de impacto y el calzado más exclusivo del mercado, estás en el lugar correcto. Rompe las reglas del juego con ropa y pisadas diseñadas para los que no temen destacar.</p>
+                    <a href="#productos" class="btn btn-cherry mt-3 px-4 py-2 fw-bold text-uppercase">Explorar Drops</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="quienes-somos" class="mb-5 py-4">
+            <h2 class="display-5 fw-black text-uppercase header-border mb-4">Quiénes Somos</h2>
+            <p class="text-muted-urban mb-4">UrbanStyle nació en el asfalto como un proyecto de respuesta directa a la creciente cultura urbana underground que exige autenticidad sobre lo genérico. Somos un sistema web y espacio de moda enfocado en la curaduría extrema de estilos icónicos como el "Baggy Street Drip" americano y la elegancia ruda del "Cherry Red Luxe". Nos dedicamos a conseguir piezas de volumen exagerado, jeans con lavados desgastados de corte oversize y tops de cuero o corsés ajustados que crean el contraste visual perfecto para el día a día en la ciudad.</p>
             
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#quienes-somos">Quiénes Somos</a></li>
-                    <li><a href="#productos">Productos & Sneakers</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+            <div class="row g-4 mt-2">
+                <div class="col-12 col-md-6">
+                    <div class="card card-urban h-100">
+                        <img src="https://i.pinimg.com/736x/da/8c/9c/da8c9c3c48e56cb5b4fd691090dfb994.jpg" class="card-img-top img-fluid img-custom-height" alt="Estilo urbano baggy oversize streetwear">
+                        <div class="card-body p-4">
+                            <h3 class="h5 fw-bold text-uppercase text-white">Estilo Urbano Premium</h3>
+                            <p class="card-text text-muted-urban small">Redefiniendo el streetwear contemporáneo. Siluetas masivas y texturas clásicas se encuentran en una curaduría de prendas diseñadas para el movimiento y el estilo diario.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card card-urban h-100">
+                        <img src="https://i.pinimg.com/736x/c0/aa/fd/c0aafd4a7c958824a881c8554f7ef2ae.jpg" class="card-img-top img-fluid img-custom-height" alt="Moda urbana cuero rojo cherry red luxe">
+                        <div class="card-body p-4">
+                            <h3 class="h5 fw-bold text-uppercase text-white">Elegance and Seduction</h3>
+                            <p class="card-text text-muted-urban small">El poder del rojo cereza en su versión más audaz. Un contraste impecable entre el denim desgastado y la sofisticación de unos stilettos que elevan cualquier look nocturno.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <main>
+        <section id="productos" class="mb-5 py-4">
+            <h2 class="display-5 fw-black text-uppercase header-border mb-4">Productos & Sneakers</h2>
+            
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card card-urban h-100">
+                        <div class="card-body p-4">
+                            <div class="fs-1 mb-2">👖</div>
+                            <h3 class="h4 fw-bold text-white text-uppercase">Streetwear</h3>
+                            <p class="text-muted-urban small">Siluetas con volumen y texturas premium inspiradas en las tendencias más pesadas.</p>
+                            <ul class="list-unstyled text-muted-urban mt-3 custom-bullet-list">
+                                <li>Baggy Jeans Extremos</li>
+                                <li>Corsets & Tops de Cuero</li>
+                                <li>Camisas Drip / Hoodies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card card-urban h-100 border-cherry-highlight">
+                        <div class="card-body p-4">
+                            <div class="fs-1 mb-2">👟</div>
+                            <h3 class="h4 fw-bold text-white text-uppercase">Sneakers & Luxe</h3>
+                            <p class="text-muted-urban small">Las marcas legendarias y los modelos más buscados a nivel mundial.</p>
+                            <ul class="list-unstyled text-muted-urban mt-3 custom-bullet-list">
+                                <li>Air Jordan 1 Retro & Nike Dunk</li>
+                                <li>Botas Timberland Classics</li>
+                                <li>Tacones Style Luxe</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card card-urban h-100">
+                        <div class="card-body p-4">
+                            <div class="fs-1 mb-2">👜</div>
+                            <h3 class="h4 fw-bold text-white text-uppercase">Accesorios</h3>
+                            <p class="text-muted-urban small">Los complementos esenciales para cerrar tu outfit con pura actitud.</p>
+                            <ul class="list-unstyled text-muted-urban mt-3 custom-bullet-list">
+                                <li>Bolsos y Carteras Urbanas</li>
+                                <li>Gorras y Beanies</li>
+                                <li>Cadenas y Joyería Heavy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <section id="inicio">
-                <h2>Inicio</h2>
-                <p>Bienvenido a la zona del auténtico Streetwear. En <strong>UrbanStyle</strong> no seguimos tendencias de masas, traemos la cultura pesada de la calle directa a tu clóset. Si buscas siluetas baggy extremas, combinaciones de impacto y el calzado más exclusivo del mercado, estás en el lugar correcto. Rompe las reglas del juego con ropa y pisadas diseñadas para los que no temen destacar.</p>
-            </section>
-
-            <section id="quienes-somos">
-                <h2>Quiénes Somos</h2>
-                <p>UrbanStyle nació en el asfalto como un proyecto de respuesta directa a la creciente cultura urbana underground que exige autenticidad sobre lo genérico. Somos un sistema web y espacio de moda enfocado en la curaduría extrema de estilos icónicos como el "Baggy Street Drip" americano y la elegancia ruda del "Cherry Red Luxe". Nos dedicamos a conseguir piezas de volumen exagerado, jeans con lavados desgastados de corte oversize y tops de cuero o corsés ajustados que crean el contraste visual perfecto para el día a día en la ciudad. Nuestro objetivo principal es estructurar una comunidad global unida por el drip, donde la combinación de prendas de alta calidad y calzado legendario permita a cada persona crear una armadura de identidad urbana inigualable y con actitud incorregible.</p>
+        <section id="contacto" class="mb-5 py-4">
+            <h2 class="display-5 fw-black text-uppercase header-border mb-4">Contacto</h2>
+            
+            <div class="row g-4 align-items-stretch">
+                <div class="col-12 col-lg-5">
+                    <div class="p-4 rounded-3 h-100 info-contacto-box">
+                        <h3 class="h4 fw-bold text-white text-uppercase mb-4">Información Oficial</h3>
+                        <p class="mb-3"><strong>📧 Correo:</strong> <br><a href="mailto:drops@urbanstyle.com" class="text-cherry-link">drops@urbanstyle.com</a></p>
+                        <p class="mb-3"><strong>📞 Teléfono:</strong> <br><span class="text-white">+593 983653193</span></p>
+                        <p class="mb-3"><strong>📍 Dirección:</strong> <br><span class="text-white">Quito - Condado</span></p>
+                        <hr class="border-secondary my-4">
+                        <h4 class="h6 fw-bold text-white text-uppercase mb-3">Síguenos en Redes</h4>
+                        <div class="d-flex gap-2 flex-wrap">
+                            <a href="https://instagram.com" target="_blank" class="btn btn-outline-light btn-sm fw-bold">Instagram</a>
+                            <a href="https://tiktok.com" target="_blank" class="btn btn-outline-light btn-sm fw-bold">TikTok</a>
+                            <a href="https://pinterest.com" target="_blank" class="btn btn-outline-light btn-sm fw-bold">Pinterest</a>
+                        </div>
+                    </div>
+                </div>
                 
-                <div class="grid-estilos">
-                    <div class="card-estilo">
-                        <img src="https://i.pinimg.com/736x/da/8c/9c/da8c9c3c48e56cb5b4fd691090dfb994.jpg" alt="Estilo urbano baggy oversize streetwear">
-                        <div class="card-estilo-info">
-                            <h3>ESTILO URBANO PREMIUM</h3>
-                            <p>Redefiniendo el streetwear contemporáneo. Siluetas masivas y texturas clásicas se encuentran en una curaduría de prendas diseñadas para el movimiento y el estilo diario.</p>
-                        </div>
-                    </div>
-                    <div class="card-estilo">
-                        <img src="https://i.pinimg.com/736x/c0/aa/fd/c0aafd4a7c958824a881c8554f7ef2ae.jpg" alt="Moda urbana cuero rojo cherry red luxe">
-                        <div class="card-estilo-info">
-                            <h3>ELEGANCE AND SEDUCTION</h3>
-                            <p>El poder del rojo cereza en su versión más audaz. Un contraste impecable entre el denim desgastado y la sofisticación de unos stilettos que elevan cualquier look nocturno.</p>
-                        </div>
+                <div class="col-12 col-lg-7">
+                    <div class="p-4 rounded-3 h-100 form-contacto-box">
+                        <h3 class="h4 fw-bold text-white text-uppercase mb-4">Envíanos un Mensaje</h3>
+                        <form action="#" method="POST">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label text-white small fw-bold">Nombre Completo</label>
+                                <input type="text" class="form-control form-urban-input" id="nombre" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="correo" class="form-label text-white small fw-bold">Correo Electrónico</label>
+                                <input type="email" class="form-control form-urban-input" id="correo" placeholder="nombre@correo.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="asunto" class="form-label text-white small fw-bold">Asunto</label>
+                                <input type="text" class="form-control form-urban-input" id="asunto" placeholder="Ej. Consulta sobre Drops" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label text-white small fw-bold">Mensaje</label>
+                                <textarea class="form-control form-urban-input" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-cherry w-100 fw-bold text-uppercase py-2">Enviar Mensaje</button>
+                        </form>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="productos">
-                <section id="ropa">
-                <h2>Colección de Ropa Streetwear</h2>
-                <p>Siluetas con volumen y texturas premium inspiradas en las tendencias más fuertes de las redes:</p>
-                <ul class="marcas-lista">
-                    <li>👖 Baggy Jeans Extremos (Corte Oversize)</li>
-                    <li>🍒 Corsets & Tops de Cuero </li>
-                    <li>🏁 Camisas Drip</li>
-                    <li>👕 Camisetas y Hoddies </li>
-                </ul>
-            </section>
-
-            <section id="zapatos">
-                <h2>Calzado, Sneakers & Tacones</h2>
-                <p>Las marcas legendarias y los modelos más buscados a nivel mundial:</p>
-                <ul class="marcas-lista">
-                    <li>🥾 Botas Timberland Classics</li>
-                    <li>👟 Sneakers Air Jordan 1 Retro</li>
-                    <li>⚡ Nike Dunk & Air Force 1</li>
-                    <li>🏃 ASICS Gel-Lyte Tech Runners</li>
-                    <li>⚽ Tacos de Fútbol de Alta Gama</li>
-                    <li>👠 Tacos y Tacones de Aguja Style Luxe</li>
-                </ul>
-            </section>
-
-            <section id="accesorios">
-                <h2>Accesorios Urbanos</h2>
-                <p>Los complementos esenciales para cerrar tu outfit con actitud:</p>
-                <ul class="marcas-lista">
-                    <li>👜 Bolsos y Carteras</li>
-                    <li>🧢 Gorras y Gorros de lana</li>
-                    <li>⛓️ Cadenas y Joyería </li>
-                    <li>🧦 Calcetines Deportivos de Alta Densidad</li>
-                </ul>
-            </section>
-
-            <section id="contacto">
-                <h2>Contacto</h2>
-                <div class="contacto-info">
-                    <p><strong>📧 Correo Electrónico:</strong> <a href="mailto:drops@urbanstyle.com">drops@urbanstyle.com</a></p>
-                    <p><strong>📞 Teléfono:</strong> +593 983653193</p>
-                    <p><strong>📍 Dirección Central:</strong> Quito - Condado</p>
-                    <p><strong>🌐 Redes Sociales:</strong> 
-                        <a href="https://instagram.com" target="_blank">Instagram</a> | 
-                        <a href="https://tiktok.com" target="_blank">TikTok</a> | 
-                        <a href="https://pinterest.com" target="_blank">Pinterest</a>
-                    </p>
-                </div>
-            </section>
-
-        </main>
-
-        <aside>
-            <h3>Drops de la semana / Promos</h3>
-            <p>🚨 <strong>PREVENTA EXCLUSIVA:</strong> 15% de descuento en la colección de calzado <em>Timberland x Jordan</em> ingresando tu código de estudiante de programación.</p>
-            <p>⏰ <strong>Horario de atención del soporte:</strong> 24/7 a través de nuestro servidor de Discord oficial.</p>
+        <aside class="p-4 my-5 rounded-3 aside-gradient border-cherry-highlight">
+            <h3 class="h4 fw-black text-uppercase text-white mb-3">Drops de la semana / Promos</h3>
+            <p class="text-white mb-2">🚨 <strong>PREVENTA EXCLUSIVA:</strong> 15% de descuento en la colección de calzado <em>Timberland x Jordan</em> ingresando tu código de estudiante de programación.</p>
+            <p class="text-white-50 small mb-0">⏰ <strong>Horario de atención del soporte:</strong> 24/7 a través de nuestro servidor de Discord oficial.</p>
         </aside>
 
-        <footer>
-            <p>Desarrollado por: <strong>Karen Infante</strong></p>
-            <p>Asignatura: <strong>Desarrollo Web </strong> | Año: 2026</p>
+        <footer class="text-center pt-4 mt-5 border-top border-secondary-subtle">
+            <p class="mb-1 text-muted-urban">Desarrollado por: <strong class="text-white">Karen Infante</strong></p>
+            <p class="small text-muted-urban">Asignatura: <strong>Desarrollo Web</strong> | Año: 2026</p>
         </footer>
 
-    </div>
+    </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
